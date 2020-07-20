@@ -38,7 +38,8 @@ def menu_1():
     frame.config(relief="groove")      #tipo de borde del frame
     frame.config(cursor="hand2")      #tipo de cursor de frame
 
-    
+    imagen_1=PhotoImage(file="materiales.PNG")      #imagen 1 (conversor online PNG y de tamaño)
+    Label(frame, image=imagen_1).place(x=800,y=200)  #imagen
 
 
     Label(frame, text="¿que desea realizar?", bg="orange", fg="purple", font=("Comic Sans MS", 28)).place(x=200,y=50)  #texto corto
@@ -316,6 +317,8 @@ def prop(nombre):
         frame.config(relief="groove")      #tipo de borde del frame
         frame.config(cursor="hand2")      #tipo de cursor de frame
 
+        imagen_1=PhotoImage(file="electrodomesticos 0.PNG")      #imagen 1 (conversor online PNG y de tamaño)
+        Label(frame, image=imagen_1).place(x=300,y=150)  #imagen
 
         texto_numero=StringVar()
         Label(frame, text="¿cuantos electrodomesticos vas a ingresar?", bg="orange", fg="purple", font=("Comic Sans MS", 28)).place(x=100,y=50)  #texto corto
@@ -344,6 +347,8 @@ def prop(nombre):
             frame.config(relief="groove")      #tipo de borde del frame
             frame.config(cursor="hand2")      #tipo de cursor de frame
 
+            imagen_1=PhotoImage(file="electrodomesticos.PNG")      #imagen 1 (conversor online PNG y de tamaño)
+            Label(frame, image=imagen_1).place(x=15,y=15)  #imagen
             
             texto_electrodomesticos=StringVar()
             Label(frame, text="Electrodomestico:", bg="orange", fg="purple", font=("Comic Sans MS", 28)).place(x=10,y=540)  #texto corto
@@ -1128,7 +1133,8 @@ def prop(nombre):
 
         Label(frame, text="Proceso de calculo", bg="orange", fg="purple", font=("Comic Sans MS", 28)).place(x=200,y=30)  #texto corto
 
-        
+        imagen_1=PhotoImage(file="ecuaciones.PNG")      #imagen 1 (conversor online PNG y de tamaño)
+        Label(frame, image=imagen_1).place(x=100,y=130)  #imagen
 
         def enviar3():
             ventana7.destroy()
@@ -1398,7 +1404,7 @@ def prop(nombre):
             menu()
 
     menu()
-ventana_inicio()
+ventana_inicio() 
     
             
         
